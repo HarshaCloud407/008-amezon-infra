@@ -34,7 +34,7 @@ module "eks" {
   control_plane_subnet_ids = local.private_subnet_ids
   # EKS Managed Node Group(s)
   eks_managed_node_group_defaults = {
-    instance_types = ["m6i.large", "m5.large", "t3.medium", "t3.small"]
+    instance_types = ["m6i.large", "t3.miccro", "t3.medium", "t3.small"]
   }
 
   eks_managed_node_groups = {

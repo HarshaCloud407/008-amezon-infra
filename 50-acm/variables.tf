@@ -16,9 +16,9 @@ variable "common_tags" {
 
 
 variable "zone_name" {
-    default = "iambatman.online"
+    default = "hariawsdevops.online"
 }
 
 variable "zone_id" {
-    default = "Z09967543987OBRKFSPGO"
+    default = "Z00916842MCDX0S5FWPWY"
 }

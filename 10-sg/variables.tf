@@ -1,4 +1,4 @@
-variable "project_name" {
+variable "project" {
     default = "roboshop"
 }
 
@@ -6,34 +6,22 @@ variable "environment" {
     default = "dev"
 }
 
-variable "common_tags" {
-    default = {
-        Project = "roboshop"
-        Terraform = "true"
-        Environment = "dev"
-    }
-}
-
-variable "mysql_sg_tags" {
-    default = {
-        Component = "mysql"
-    }
-}
-
-variable "backend_sg_tags" {
-    default = {
-        Component = "backend"
-    }
-}
-
-variable "frontend_sg_tags" {
-    default = {
-        Component = "frontend"
-    }
-}
-
-variable "bastion_sg_tags" {
-    default = {
-        Component = "bastion"
-    }
+variable "sg_names" {
+    type = list
+    default = [
+        # Databases
+        "mongodb", "redis", "mysql", "rabbitmq",
+        # Backend
+        "catalogue", "user", "cart", "shipping", "payment",
+        # Backend ALB
+        "backend_alb",
+        # Frontend
+        "frontend",
+        # Frontend ALB
+        "frontend_alb",
+        # Bastion
+        "bastion",
+        # Openvpn
+        "openvpn"
+    ]
 }

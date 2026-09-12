@@ -1,5 +1,5 @@
 variable "zone_name" {
   type        = string
-  default     = "iambatman.online"
+  default     = "hariawsdevops.online"
   description = "description"
 }

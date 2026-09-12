@@ -1,4 +1,3 @@
-
 resource "aws_cloudfront_distribution" "roboshop" {
   origin {
     domain_name              = "${var.project_name}-${var.environment}.${var.zone_name}"
@@ -82,7 +81,7 @@ resource "aws_cloudfront_distribution" "roboshop" {
 
 
 resource "aws_route53_record" "roboshop_cdn" {
-  zone_id = "Z09967543987OBRKFSPGO"
+  zone_id = "Z00916842MCDX0S5FWPWY"
   name    = "roboshop-cdn.${var.zone_name}"
   type    = "A"
 

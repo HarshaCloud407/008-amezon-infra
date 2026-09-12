@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "bucket-kothadi"
+    bucket = "bucket-kothadi-hyd"
     key    = "roboshop-ecr"
     region = "us-east-1"
     dynamodb_table = "kotha-dynamo-db"

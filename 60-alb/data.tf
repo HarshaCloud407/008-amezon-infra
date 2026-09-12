@@ -8,7 +8,7 @@ data "aws_ssm_parameter" "public_subnet_ids" {
 }
 
 data "aws_ssm_parameter" "ingress_alb_sg_id" {
-  name = "/${var.project_name}/${var.environment}/ingress_alb_sg_id"
+  name = "/roboshop/dev/ingress_alb_sg_id"   # (or similar path)
 }
 
 data "aws_ssm_parameter" "https_certificate_arn" {

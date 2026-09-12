@@ -10,7 +10,8 @@ terraform {
     bucket         = "bucket-kothadi-hyd"
     key            = "roboshop-dev-eks"
     region         = "us-east-1"
-    dynamodb_table = "kotha-dynamo-db-hyd"
+    use_lockfile   = true
+    encrypt        = true
   }
 }
 

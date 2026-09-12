@@ -22,5 +22,5 @@ variable "ingress_alb_tags" {
 
 
 variable "zone_name" {
-    default = "iambatman.online"
+    default = "hariawsdevops.online"
 }

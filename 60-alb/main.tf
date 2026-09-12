@@ -103,7 +103,7 @@ resource "aws_lb_listener" "https" {
 }
 
 resource "aws_route53_record" "roboshop" {
-  zone_id = "Z09967543987OBRKFSPGO"
+  zone_id = "Z00916842MCDX0S5FWPWY"
   name    = "roboshop-${var.environment}.${var.zone_name}"
   type    = "A"
 

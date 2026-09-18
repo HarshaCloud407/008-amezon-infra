@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "bucket-kothadi-hyd1"
+    bucket = "bucket-kothadi-hyd2"
     key    = "roboshop-vpc"
     region = "us-east-1"
     use_lockfile = true

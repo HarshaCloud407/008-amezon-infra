@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket  = "bucket-kothadi-hyd" # Replace with your unique bucket name
+    bucket  = "bucket-kothadi-hyd2" # Replace with your unique bucket name
     key     = "roboshop-dev-sg-rules"
     region  = "us-east-1"
     encrypt = true

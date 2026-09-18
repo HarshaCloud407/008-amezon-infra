@@ -7,10 +7,11 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "bucket-kothadi-hyd"
+    bucket = "bucket-kothadi-hyd2"
     key    = "roboshop-bastion"
     region = "us-east-1"
-    dynamodb_table = "kotha-dynamo-db-hyd"
+    encrypt = true
+    use_lockfile   = true
   }
 }
 

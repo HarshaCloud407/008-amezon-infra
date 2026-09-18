@@ -13,14 +13,14 @@ terraform {
   backend "s3" {
     bucket       = "bucket-kothadi-hyd1"   # keep your existing bucket name
     key          = "dev/security-group/terraform.tfstate"
-    region       = "us-east-1"
+    region       = "eu-north-1"
     use_lockfile = true
     encrypt      = true
   }
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region = "eu-north-1"
 
   default_tags {
     tags = {

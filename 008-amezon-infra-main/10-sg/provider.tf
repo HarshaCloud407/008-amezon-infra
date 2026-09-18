@@ -11,7 +11,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket       = "bucket-kothadi-hyd"   # keep your existing bucket name
+    bucket       = "bucket-kothadi-hyd1"   # keep your existing bucket name
     key          = "dev/security-group/terraform.tfstate"
     region       = "us-east-1"
     use_lockfile = true
